@@ -4,7 +4,7 @@
     window.location.href = "Pagina de ayuda.html"; // Pagina propia de ayuda
 }
 function redirigirCalificacion(){
-    window.location.href ="Calificanos.html"; 
+    window.location.href ="views/calificanos.html"; 
 
 }
 function carro2(){
@@ -45,6 +45,35 @@ dropdownButton2.addEventListener('click', () => {
 document.addEventListener('click', (event) => {
     if (!dropdownButton2.contains(event.target) && !dropdownContent2.contains(event.target)) {
         dropdownContent2.classList.remove('show2');
+    }
+});
+
+// Script para el funcionamiento de los menús desplegables
+document.addEventListener('DOMContentLoaded', function() {
+    // Dropdown 1
+    const dropdownBtn1 = document.querySelector('.dropdown-menu-btn');
+    const dropdownContent1 = document.querySelector('.dropdown-menu-content');
+    
+    if (dropdownBtn1 && dropdownContent1) {
+        dropdownBtn1.addEventListener('click', function() {
+            dropdownContent1.classList.toggle('show-content');
+        });
+    }
+    
+    // Dropdown 2
+    const dropdownBtn2 = document.querySelector('.dropdown-menu2');
+    const dropdownContent2 = document.querySelector('.dropdown-menu2-content');
+    
+    if (dropdownBtn2 && dropdownContent2) {
+        dropdownBtn2.addEventListener('click', function() {
+            dropdownContent2.classList.toggle('show-content');
+        });
+    }
+    
+    // Función para la redirección del botón "ALQUILA YA"
+    window.carro2 = function() {
+        // Redirección a la página de alquiler o productos
+        window.location.href = 'productos.html';
     }
 });
 

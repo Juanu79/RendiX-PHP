@@ -132,6 +132,9 @@
 
     <!-- Contenedor del botón PayPal -->
     <div id="paypal-button-container" class="paypal-button-wrapper"></div>
+
+</div>
+
   </div>
 </div>
 
@@ -159,5 +162,9 @@
         </form>
       </div>
     </div>
+    <div id="pago-aprobado" class="pago-alerta oculto">
+  <p>✅ ¡Pago completado con éxito!</p>
+</div>
+
 </body>
 </html>

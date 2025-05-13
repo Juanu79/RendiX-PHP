@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #d66700;
+    background-color: #ff5500;
     padding: 20px;
     color: white;
     display: flex;
@@ -101,11 +101,11 @@ header {
 }
 
 .back-btn:hover {
-    background-color: #e25a00;
+    background-color: #585858;
 }
 
 footer {
-    background-color: #e67a00;
+    background-color:  #535353;
     color: white;
     padding: 30px 20px;
     margin-top: 40px;

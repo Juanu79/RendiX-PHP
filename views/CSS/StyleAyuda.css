@@ -378,11 +378,7 @@ section:target .dropdown-menu2-content {
         flex-direction: column;
         align-items: center;
     }
-    
-    .logo {
-        margin-bottom: 15px;
-    }
-    
+
     nav {
         flex-direction: column;
         width: 100%;
@@ -426,4 +422,49 @@ section:target .dropdown-menu2-content {
     .right, .derecha {
         padding-left: 0;
     }
+}
+/* Contenedor principal del header */
+.rendix-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* Agrupamos botón + logo a la izquierda */
+.rendix-navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Botón de ALQUILA YA */
+.rendix-button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rendix-button:hover {
+  background-color: darkgreen;
+}
+
+.rendix-cartIcon {
+  width: 16px;
+  height: 16px;
+  fill: white;
+}
+
+/* Logo */
+.logo {
+  height: 50px;
 }

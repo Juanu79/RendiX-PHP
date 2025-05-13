@@ -34,7 +34,7 @@ body {
 
 /* Header y Navegación */
 header {
-    background: linear-gradient(to right, #FF6600, #ff8533);
+     background-color: #ff5500;
     color: var(--white);
     padding: 10px 0;
     position: sticky;
@@ -50,7 +50,7 @@ header {
 }
 
 .logo img {
-    height: 50px;
+    height: 8cqh;
 }
 
 nav {
@@ -151,38 +151,127 @@ nav {
 }
 
 /* Botón de Alquila Ya */
+/* Botón ALQUILA YA */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to right, #ff6600, #ff8000);
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 40px;
+}
+
+.search-input {
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  width: 250px;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.navbar-menu li a {
+  color: white;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
 .button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    font-weight: bold;
-    padding: 8px 20px;
-    color: white;
-    background-color: var(--accent-color);
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(to right, #00c000, #008000);
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background 0.3s ease;
+  white-space: nowrap;
 }
 
 .button:hover {
-    background-color: #3d8c40;
-    transform: translateY(-2px);
+  background: #009e42;
 }
 
 .cartIcon {
-    width: 22px;
-    height: 22px;
-    fill: white;
+  width: 18px;
+  height: 18px;
+  fill: white;
 }
 
-/* Títulos PQRS con CoolText */
-center img {
-    margin: 20px 0;
-    max-width: 100%;
-    height: auto;
+/* Responsivo para móviles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-left,
+  .navbar-menu,
+  .navbar-right {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .navbar-menu {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+
+  .button {
+    align-self: flex-end;
+    font-size: 14px;
+    padding: 8px 14px;
+  }
 }
+
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .button {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+
+  .cartIcon {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+
 
 hr {
     margin: 20px 0;
@@ -410,4 +499,147 @@ footer {
     margin-top: 30px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 14px;
+}
+        .page-title {
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 30px;
+            color: var(--secondary-color);
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .page-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+
+        /* CONTENEDOR GENERAL */
+.rendix-header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+    background-color: #ff5500;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  
+}
+
+
+/* IZQUIERDA */
+.rendix-logo {
+  height: 80px;
+}
+
+.rendix-nav-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+/* CENTRO */
+.rendix-nav-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 2;
+  gap: 5px;
+}
+
+/* Buscador */
+.rendix-input-container {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.rendix-input-search {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 20px;
+  width: 250px;
+}
+
+/* Menú */
+.rendix-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.rendix-menu li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* DERECHA */
+.rendix-navbar-right {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.rendix-button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(to right, #00c000, #008000);
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.rendix-button:hover {
+  background: #009e42;
+}
+
+.rendix-cart-icon {
+  width: 18px;
+  height: 18px;
+  fill: white;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .rendix-header-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .rendix-nav-center {
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .rendix-input-search {
+    width: 100%;
+  }
+
+  .rendix-menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .rendix-navbar-right {
+    align-self: flex-end;
+    margin-top: 10px;
+  }
 }

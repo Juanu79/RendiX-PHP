@@ -1519,3 +1519,31 @@ h1 {
   --text-dark: #222222;   /* Un gris oscuro o negro */
   --text-light: #ffffff;  /* Blanco */
 }
+
+.pago-alerta {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #28a745;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  font-size: 18px;
+  z-index: 9999;
+  opacity: 0;
+  animation: fadeInOut 3s forwards;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.oculto {
+  display: none;
+}
+

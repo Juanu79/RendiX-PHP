@@ -4,18 +4,78 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="../CSS/StyleCalifica.css">
+
  <link rel="stylesheet" href="../CSS/Style.css">
-  <link rel="stylesheet" href="../CSS/Style.css">
+  <link rel="stylesheet" href="../CSS/StyleCalifica.css">
+
   <script src="../JS/Botones.js"></script>
   <title>Pago</title>
+  <style>
+        /* Estilos para el header con tema naranja */
+        #pago-header {
+            background-color: #FF8C00; /* Naranja principal */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            box-shadow: 0 4px 8px rgba(255, 140, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        #pago-header h1 {
+            color: #fff; /* Texto blanco para contraste */
+            font-size: 1.8rem;
+            margin: 0;
+            font-weight: 700;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        #pago-header a {
+            text-decoration: none;
+            margin-left: 1rem;
+        }
+
+        /* ID único para el logo - TAMAÑO REDUCIDO */
+        #pago-rendix-logo {
+            height: 95px; /* Reducido de 50px a 35px */
+            width: auto;
+            transition: transform 0.3s ease;
+            border-radius: 4px;
+            padding: 3px;s
+        }
+
+        #pago-rendix-logo:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        /* Media queries para responsividad */
+        @media (max-width: 768px) {
+            #pago-header {
+                flex-direction: column;
+                padding: 0.8rem;
+            }
+            
+            #pago-header h1 {
+                font-size: 1.4rem;
+                margin-bottom: 0.5rem;
+            }
+            
+            #pago-rendix-logo {
+                height: 30px;
+            }
+        }
+    </style>
  </head>
 <body>
-    <header>
-        <h1>Elige tu método de pago</h1> <a href="index.html">
-            <img src="../IMAGENES/RendiX.jpg" alt="rendix" class="imgr">
-          </a>
-          
+
+  <header id="pago-header">
+        <h1>Elige tu método de pago</h1>
+        <a href="index.html">
+            <img src="../IMAGENES/RENDIXblanco.png" alt="rendix" id="pago-rendix-logo">
+        </a>
     </header>
   
    <!-- Contenedor principal para los métodos de pago -->

@@ -147,7 +147,7 @@ $productosDestacados[] = new Producto(
       </div>
   
       <div class="slide" style="background:  
-        url('IMAGENES/publicidad4.png') center/cover no-repeat;">
+        url('IMAGENES/punlicidad4.png') center/cover no-repeat;">
         <div class="content">
           <a href="#" class="btn">Descubre más</a>
         </div>

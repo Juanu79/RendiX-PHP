@@ -35,7 +35,7 @@
         </a>  
         </p>
 
-</footer>
-<script src="iniciarsesion.js"></script>
+</footer>   
+<script src="../JS/iniciarsesion.js"></script>
 </body>
 </html>

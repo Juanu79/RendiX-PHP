@@ -2,23 +2,23 @@
 // fUNCIONES DE LA PAGINA PRINCIPAL
   // Función para abrir un enlace del botón ALQUILAR 
     function redirigir1() {
-      window.location.href="Lavadora.html"; //Link Lavadora Haceb
+      window.location.href="HTML/Lavadora.php"; //Link Lavadora Haceb
     }
     function redirigir2() {
-      window.location.href="bafle.html"; //Link de Bafle de sonido
+      window.location.href="HTML/bafle.php"; //Link de Bafle de sonido
     }
     function redirigir3() {
-      window.location.href="televisor.html"; //Link de Televisor
+      window.location.href="HTML/televisor.php"; //Link de Televisor
     }
     function redirigir4() {
-      window.location.href="xbox.html"; //Link de Xbox 360
+      window.location.href="HTML/xbox.php"; //Link de Xbox 360
     }
     function redirigir5() {
-      window.location.href="camping.html" // Link del camping
+      window.location.href="HTML/camping.php" // Link del camping
     }
     
     function redirigir6() {
-      window.location.href = "carro.html"; //Link Renault Kwid
+      window.location.href = "HTML/carro.php"; //Link Renault Kwid
     }
     function buscarProducto() {
     // Obtener el valor del campo de búsqueda
@@ -26,17 +26,17 @@
 
     // Redirigir a la página correspondiente según el término de búsqueda
     if (busqueda === 'lavadora') {
-        window.location.href = 'Lavadora.html'; // Cambia 'lavadora.html' por la URL de la página de la lavadora
+        window.location.href = 'HTML/Lavadora.php'; // Cambia 'lavadora.html' por la URL de la página de la lavadora
     } else if (busqueda === 'bafle') {
-        window.location.href = 'bafle.html'; // Cambia 'bafle.html' por la URL de la página del bafle
+        window.location.href = 'HTML/bafle.php'; // Cambia 'bafle.html' por la URL de la página del bafle
       } else if (busqueda === 'televisor') {
-        window.location.href = 'televisor.html'; // Cambia 'televisor.html' por la URL de la página del televisor
+        window.location.href = 'HTML/televisor.php'; // Cambia 'televisor.html' por la URL de la página del televisor
     } else if (busqueda === 'xbox') {
-        window.location.href = 'xbox.html'; // Cambia 'xbox.html' por la URL de la página del xbox
+        window.location.href = 'HTML/xbox.php'; // Cambia 'xbox.html' por la URL de la página del xbox
     } else if (busqueda === 'camping') {
-      window.location.href = 'camping.html'; // Cambia 'camping.html' por la URL de la página del camping
+      window.location.href = 'HTML/camping.php'; // Cambia 'camping.html' por la URL de la página del camping
   } else if (busqueda === 'renault') {
-    window.location.href = 'carro.html'; // Cambia 'carro.html' por la URL de la página del carro
+    window.location.href = 'HTML/carro.php'; // Cambia 'carro.html' por la URL de la página del carro
 } else {
         alert('Producto no encontrado. Inténtelo nuevamente.'); // Mensaje si no se encuentra el producto
     }
@@ -44,83 +44,83 @@
 // FUNCIONES PARA LA PAGINA LAVADORA
   function registro(event) { 
     event.preventDefault(); // Prevenir el comportamiento predeterminado del formulario 
-    window.location.href = "RegistroExitoso.html"; // Redirigir a la página de registro exitoso 
+    window.location.href = "HTML/RegistroExitoso.php"; // Redirigir a la página de registro exitoso 
     } 
   function met1() {
-    window.location.href="Forma-Entrega.html" // Link para Pag Forma de Entrega
+    window.location.href="HTML/Forma-Entrega.php" // Link para Pag Forma de Entrega
   }
   function met2() {
-    window.location.href="form-Entrega-not.html" // Link para Pag Forma de Entrega
+    window.location.href="HTML/form-Entrega-not.php" // Link para Pag Forma de Entrega
   }
 
 // fUNCIONES PARA LA PAGINA DE FORMA-ENTREGA
    function Opc1() {
-    window.location.href="Form-Direccion.html"; //Link fORMULARIO De Direccion
+    window.location.href="HTML/Form-Direccion.php"; //Link fORMULARIO De Direccion
                    }
     function Opc2()  {
-    window.location.href="Contraentrega-not.html" //Link fORMULARIO De Direccion
+    window.location.href="HTML/Contraentrega-not.php" //Link fORMULARIO De Direccion
 } 
   function Opc3(event) { 
    event.preventDefault(); // Prevenir el comportamiento predeterminado del formulario 
-   window.location.href = "Contraentrega.html"; // Redirigir a la página de Contraentrega
+   window.location.href = "HTML/Contraentrega.php"; // Redirigir a la página de Contraentrega
 } 
 
 
 // FUNCIONES PARA LA PAGINA DE FORMA-ENTREGA-NOT
 function Opc4() {
-  window.location.href="Form-Direccion-not.html"; //Link fORMULARIO De Direccion
+  window.location.href="HTML/Form-Direccion-not.php"; //Link fORMULARIO De Direccion
                  }
   function Opc5()  {
-  window.location.href="Tarjetas-not.html" //Link fORMULARIO De Direccion
+  window.location.href="HTML/Tarjetas-not.php" //Link fORMULARIO De Direccion
 } 
 function Opc6(event) { 
   event.preventDefault(); // Prevenir el comportamiento predeterminado del formulario 
-  window.location.href = "Tarjetas.html"; // Redirigir a la página de Contraentrega
+  window.location.href = "HTML/Tarjetas.php"; // Redirigir a la página de Contraentrega
 } 
 
 // FUNCIONES PARA LA PAG PEDIDO-PREPARACION
 
  function comprar()  {
-   window.location.href= "index.html"
+   window.location.href= "views/index.php"
  }
 
  // FUNCIONES DE LA PAG CONTRAENTREGA Y CONTRAENTREGA-NOT
 
   function pedido()  {
-    window.location.href= "Pedido-Preparacion.html"
+    window.location.href= "HTML/Pedido-Preparacion.php"
   }
 
 // FUNCIONES PARA LA PAG PROCESO-TARJETAS
   function vis()  {
-    window.location.href= "Form-visa.html"
+    window.location.href= "HTML/form-mastercard.php"
   }
   function mastercard()  {
-    window.location.href= "form-mastercard.html"
+    window.location.href= "HTML/form-mastercard.php"
   }
 // FUNCIONES PARA LAS PAG TARJETAS Y TARJETAS-NOT
   function proceso()  {
-  window.location.href= "Proceso-Tarjetas.html"
+  window.location.href= "HTML/Proceso-Tarjetas.php"
 }
 // FUNCIONES PARA LAS PAG DE FORM-VISA Y FORM-MASTERCARD
   function master(event) { 
     event.preventDefault(); // Prevenir el comportamiento predeterminado del formulario 
-   window.location.href = "Pedido-Preparacion.html"; // Redirigir a la página de Contraentrega
+   window.location.href = "HTML/Pedido-Preparacion.php"; // Redirigir a la página de Contraentrega
 } 
   function visa(event) { 
    event.preventDefault(); // Prevenir el comportamiento predeterminado del formulario 
-   window.location.href = "Pedido-Preparacion.html"; // Redirigir a la página de Contraentrega
+   window.location.href = "HTML/Pedido-Preparacion.php"; // Redirigir a la página de Contraentrega
 } 
 
 // Funcion del boton del carro de compras
 
 function carro()  {
-  window.location.href= "carrito.html"
+  window.location.href= "HTML/carrito.php"
 }
 
 //Funciones para el boton politicas de alquilar
 
 function politicas()  {
-  window.location.href= "Pagina de ayuda.html"
+  window.location.href= "HTML/Pagina de ayuda.php"
 }
 document.addEventListener('DOMContentLoaded', function () {
   let currentIndex = 0;

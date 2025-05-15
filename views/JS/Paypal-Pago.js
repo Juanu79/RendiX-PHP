@@ -39,7 +39,7 @@ paypal.Buttons({
 
     // Redirigir después de 3 segundos
     setTimeout(() => {
-      window.location.href = 'Pedido-Preparacion.html';
+      window.location.href = '../HTML/Pedido-Preparacion.php';
     }, 3000);
 
     console.log(details); // Aquí puedes guardar los datos si quieres

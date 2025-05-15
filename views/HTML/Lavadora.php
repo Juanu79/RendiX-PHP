@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proceso de pago</title>
     <!-- Enlace al archivo de estilos CSS -->
-    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="../CSS/Style.css">
     <script src="Botones.js"></script>
 </head>
 <body>

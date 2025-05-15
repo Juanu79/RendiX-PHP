@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proceso de pago</title>
     <!-- Enlace al archivo de estilos CSS -->
-    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="../CSS/Style.css">
     <script src="Botones.js"></script>
 </head>
 <body>
@@ -17,7 +17,7 @@
         <div class="container">
           <div class="logo">
             <!-- Imagen del logo de RendiX -->
-            <img src="IMAGENES/RendiX.jpg" alt="Logo de Rendix">
+            <img src="../IMAGENES/RendiX.jpg" alt="Logo de Rendix">
           </div>
           
           <!-- Barra de navegación -->
@@ -45,7 +45,7 @@
     
     <!-- Contenedor de la imagen del producto -->
     <div class="image-container">
-      <img src="IMAGENES/tienda-turistica-aislado-sobre-fondo-blanco_873674-588.avif" alt="Camping"class="centered-image" width="400">
+      <img src="../IMAGENES/tienda-turistica-aislado-sobre-fondo-blanco_873674-588.avif" alt="Camping"class="centered-image" width="400">
     </div>
     
     <!-- Descripción detallada del producto -->
@@ -109,7 +109,7 @@
             <!-- Imagen representativa del método de pago -->
             <br>
             <br>
-            <img src="IMAGENES/1757493.png" alt="Lavadora-Haceb" width="100">
+            <img src="../IMAGENES/1757493.png" alt="Lavadora-Haceb" width="100">
           </div>
           <!-- Descripción del método de pago -->
           <p class="desc">Método de pago en el cual el cliente realiza el pago de su compra al momento de recibir el producto en su domicilio.</p>
@@ -170,7 +170,7 @@
     <div class="metcards-container">
       <div class="cardprofile">
         <span class="card__title">Lina Marcela Avila Romero</span>
-        <img src="IMAGENES/pexels-robinson-avila-917518-16452929.jpg" alt="Profile" width="100">
+        <img src="../IMAGENES/pexels-robinson-avila-917518-16452929.jpg" alt="Profile" width="100">
         <p class="card__content">
           <b>¡Hola! Soy Lina Marcela Ávila Romero</b>, una profesional en biología apasionada por la ciencia y la conservación del medio ambiente,
            y ahora también proveedora de productos en RendiX.

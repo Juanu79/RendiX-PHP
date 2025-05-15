@@ -120,7 +120,11 @@ function carro()  {
 //Funciones para el boton politicas de alquilar
 
 function politicas()  {
+<<<<<<< HEAD
   window.location.href= "HTML/Pagina de ayuda.php"
+=======
+  window.location.href= "Pagina de ayuda.php"
+>>>>>>> f1476c5def3b994c7317432c1d1ace7338412c98
 }
 document.addEventListener('DOMContentLoaded', function () {
   let currentIndex = 0;

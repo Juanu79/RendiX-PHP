@@ -6,13 +6,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Dirección</title>
-    <link rel="stylesheet" href="Style-form.css">
-    <script src="Botones.js"></script>
+    <link rel="stylesheet" href="../CSS/Style-form.css">
+    <script src="JS/Botones.js"></script>
 </head>
 <body>
     <header>
         <div class="logo-container">
-            <img src="IMAGENES/RendiX-transformed.png" alt="Logo de Rendix">
+            <img src="../IMAGENES/RendiX-transformed.png" alt="Logo de Rendix">
         </div>
     </header>
 

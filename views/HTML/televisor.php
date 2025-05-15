@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proceso de pago</title>
     <!-- Enlace al archivo de estilos CSS -->
-    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="../CSS/Style.css">
     <script src="Botones.js"></script>
 </head>
 <body>
@@ -17,7 +17,7 @@
         <div class="container">
           <div class="logo">
             <!-- Imagen del logo de RendiX -->
-            <img src="IMAGENES/RendiX.jpg" alt="Logo de Rendix">
+            <img src="../IMAGENES/RENDIXblanco.png" alt="Logo de Rendix">
           </div>
           
           <!-- Barra de navegación -->
@@ -45,7 +45,7 @@
     
     <!-- Contenedor de la imagen del producto -->
     <div class="image-container">
-      <img src="IMAGENES/7705191043944_01.webp" alt="Lavadora-Haceb"class="centered-image" width="400">
+      <img src="../IMAGENES/7705191043944_01.webp" alt="Lavadora-Haceb"class="centered-image" width="400">
     </div>
     
     <!-- Descripción detallada del producto -->
@@ -109,7 +109,7 @@
             <!-- Imagen representativa del método de pago -->
             <br>
             <br>
-            <img src="IMAGENES/1757493.png" alt="Lavadora-Haceb" width="100">
+            <img src="../IMAGENES/1757493.png" alt="Lavadora-Haceb" width="100">
           </div>
           <!-- Descripción del método de pago -->
           <p class="desc">Método de pago en el cual el cliente realiza el pago de su compra al momento de recibir el producto en su domicilio.</p>
@@ -170,7 +170,7 @@
     <div class="metcards-container">
       <div class="cardprofile">
         <span class="card__title">Jaime Triana Dominguez</span>
-        <img src="IMAGENES/pexels-nkhajotia-1516680.jpg" alt="Profile" width="100">
+        <img src="../IMAGENES/pexels-nkhajotia-1516680.jpg" alt="Profile" width="100">
         <p class="card__content">
           <b>¡Hola! Soy Jaime Triana Domínguez</b>, un ingeniero de sistemas y computación apasionado por la tecnología y la innovación, y ahora también proveedor de productos en RendiX.
         </p>

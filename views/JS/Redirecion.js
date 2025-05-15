@@ -1,19 +1,19 @@
 
   
   function redirigirAyuda() {
-    window.location.href = "Pagina de ayuda.html"; // Pagina propia de ayuda
+    window.location.href = "HTML/Pagina de ayuda.php"; // Pagina propia de ayuda
 }
 function redirigirCalificacion(){
     window.location.href ="views/calificanos.html"; 
 
 }
 function carro2(){
-  window.location.href ="carrito.html"; 
+  window.location.href ="views/index.php"; 
 
 }
 
 function redirigirPQRS() {
-  window.location.href = "PQRS.html";
+  window.location.href = "HTML/PQRS.php";
 }
 
 // Selección del botón y del contenido del menú desplegable

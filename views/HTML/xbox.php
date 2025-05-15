@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proceso de pago</title>
     <!-- Enlace al archivo de estilos CSS -->
-    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="../CSS/Style.css">
     <script src="Botones.js"></script>
 </head>
 <body>
@@ -45,7 +45,7 @@
     
     <!-- Contenedor de la imagen del producto -->
     <div class="image-container">
-      <img src="IMAGENES/41G+FzEeRCL.jpg" alt="Xbox 360"class="centered-image" width="400">
+      <img src="../IMAGENES/41G+FzEeRCL.jpg" alt="Xbox 360"class="centered-image" width="400">
     </div>
     
     <!-- Descripción detallada del producto -->
@@ -112,7 +112,7 @@
             <!-- Imagen representativa del método de pago -->
             <br>
             <br>
-            <img src="IMAGENES/1757493.png" alt="Lavadora-Haceb" width="100">
+            <img src="../IMAGENES/1757493.png" alt="Lavadora-Haceb" width="100">
           </div>
           <!-- Descripción del método de pago -->
           <p class="desc">Método de pago en el cual el cliente realiza el pago de su compra al momento de recibir el producto en su domicilio.</p>
@@ -173,7 +173,7 @@
     <div class="metcards-container">
       <div class="cardprofile">
         <span class="card__title">Social Tech</span>
-        <img src="IMAGENES/pexels-junior-teixeira-1064069-2047905.jpg" alt="Profile" width="100">
+        <img src="../IMAGENES/pexels-junior-teixeira-1064069-2047905.jpg" alt="Profile" width="100">
         <p class="card__content">
           <b>¡Hola! Somos Social Tech</b>, Compañía de Tecnología enfocada a los videojuegos, una empresa apasionada por la innovación y el avance en el mundo del entretenimiento digital.
            Ahora también proveedor de productos Tecnologicos  en RendiX.

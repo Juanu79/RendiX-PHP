@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrarse</title><!--titulo que aparece en la pestaña del navegador-->
-    <link rel="stylesheet" href="CSS/Style inicio.css"><!--enlace para el estilo de la pagina--> 
+    <link rel="stylesheet" href="../CSS/Style inicio.css"><!--enlace para el estilo de la pagina--> 
 </head>
 
 <body>
@@ -33,22 +33,22 @@
             <input type="password" id="confirm_password" name="confirm_password" required><br>
 
             
-            <button onclick="iniciarSesion()">Registrarse</button><!--botón para enviar el formulario-->
+            <button onclick="iniciarSesion(event)">Registrarse</button><!--botón para enviar el formulario-->
         </form>
     </div>
-    <img src="imagenes/rendix logo.png" alt="rendix"><!--imagen del logo-->
+    <img src="../imagenes/rendix logo.png" alt="rendix"><!--imagen del logo-->
 <footer id="contacto"><!--pie de página con información de contacto-->
     <p>Contacto:rendix@hotmail.com</p><!--informacio de contacto "correo electrónico"-->
     <p>Redes sociales: 
         <a href="#" class="social-link">
-            <img src="imagenes/linkedin.png" alt="LinkedIn" class="social-icon"> 
+            <img src="../imagenes/linkedin.png" alt="LinkedIn" class="social-icon"> 
         </a>  
         <a href="#" class="social-link">
-            <img src="imagenes/github.png" alt="GitHub" class="social-icon">
+            <img src="../imagenes/github.png" alt="GitHub" class="social-icon">
         </a>  
         </p>
 
 </footer>
-<script src="iniciarsesion.js"></script>
+<script src="../views/JS/iniciarsesion.js"></script>
 </body>
 </html>

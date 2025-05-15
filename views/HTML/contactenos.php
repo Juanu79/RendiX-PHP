@@ -6,13 +6,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contáctenos | Rendix</title>
-    <link rel="stylesheet" href="CSS/contac.css">
+    <link rel="stylesheet" href="../CSS/contac.css">
 </head>
 <body>
     <header class="animate__animated animate__fadeIn">
         <div class="header-content">
             <h1>Contáctenos</h1>
-            <img src="IMAGENES/RENDIXblanco.png" alt="rendix" class="imgr">
+            <img src="../IMAGENES/RENDIXblanco.png" alt="rendix" class="imgr">
         </div>
     </header>
     
@@ -22,7 +22,7 @@
             <div class="informacion">
                 <div class="nombre">
                     <div class="profile-header">
-                        <img src="IMAGENES/juan.jpg" alt="Juan" class="fotodenosotros">
+                        <img src="../IMAGENES/juan.jpg" alt="Juan" class="fotodenosotros">
                         <h3>Juan Esteban Urriago</h3>
                     </div>
                     <p>Me llamo Juan Esteban Calderón, soy estudiante de la universidad Uniagustiniana. Estoy estudiando un tecnólogo de desarrollo de software. Puedo decir que trabajar en la página de Rendix es muy innovador e interesante para el público.</p>
@@ -31,7 +31,7 @@
                 
                 <div class="nombre">
                     <div class="profile-header">
-                        <img src="IMAGENES/carlos.png" alt="Carlos" class="fotodenosotros">
+                        <img src="../IMAGENES/carlos.png" alt="Carlos" class="fotodenosotros">
                         <h3>Carlos Fernando Riaño</h3>
                     </div>
                     <p>Me llamo Carlos Fernando Riaño, soy estudiante de la universidad Uniagustiniana. Estoy estudiando un tecnólogo de desarrollo de software.</p>
@@ -40,7 +40,7 @@
                 
                 <div class="nombre">
                     <div class="profile-header">
-                        <img src="IMAGENES/santiago.jpg" alt="Santiago" class="fotodenosotros">
+                        <img src="../IMAGENES/santiago.jpg" alt="Santiago" class="fotodenosotros">
                         <h3>Santiago Guzman</h3>
                     </div>
                     <p>Me llamo Santiago Guzmán Suarez, soy estudiante de la universidad Uniagustiniana. Estoy estudiando tecnólogo de desarrollo de software. Para mi Rendix es algo innovador y nuevo que puede llegar muy lejos.</p>
@@ -65,10 +65,10 @@
                 <h3>Redes Sociales</h3>
                 <div class="social-icons">
                     <a href="#" class="social-link" aria-label="LinkedIn">
-                        <img src="imagenes/linkedin.png" alt="LinkedIn" class="social-icon">
+                        <img src="../imagenes/linkedin.png" alt="LinkedIn" class="social-icon">
                     </a>
                     <a href="#" class="social-link" aria-label="GitHub">
-                        <img src="imagenes/github.png" alt="GitHub" class="social-icon">
+                        <img src="../imagenes/github.png" alt="GitHub" class="social-icon">
                     </a>
                 </div>
             </div>
@@ -79,6 +79,6 @@
         </div>
     </footer>
 
-    <script src="contactanos.js"></script>
+    <script src="../JS/contactanos.js"></script>
 </body>
 </html>

@@ -2,23 +2,23 @@
 // fUNCIONES DE LA PAGINA PRINCIPAL
   // Función para abrir un enlace del botón ALQUILAR 
     function redirigir1() {
-      window.location.href="Lavadora.html"; //Link Lavadora Haceb
+      window.location.href="HTML/Lavadora.php"; //Link Lavadora Haceb
     }
     function redirigir2() {
-      window.location.href="bafle.html"; //Link de Bafle de sonido
+      window.location.href="HTML/bafle.php"; //Link de Bafle de sonido
     }
     function redirigir3() {
-      window.location.href="televisor.html"; //Link de Televisor
+      window.location.href="HTML/televisor.php"; //Link de Televisor
     }
     function redirigir4() {
-      window.location.href="xbox.html"; //Link de Xbox 360
+      window.location.href="HTML/xbox.php"; //Link de Xbox 360
     }
     function redirigir5() {
-      window.location.href="camping.html" // Link del camping
+      window.location.href="HTML/camping.php" // Link del camping
     }
     
     function redirigir6() {
-      window.location.href = "carro.html"; //Link Renault Kwid
+      window.location.href = "HTML/carro.php"; //Link Renault Kwid
     }
     function buscarProducto() {
     // Obtener el valor del campo de búsqueda
@@ -26,7 +26,7 @@
 
     // Redirigir a la página correspondiente según el término de búsqueda
     if (busqueda === 'lavadora') {
-        window.location.href = 'Lavadora.html'; // Cambia 'lavadora.html' por la URL de la página de la lavadora
+        window.location.href = 'HTML/Lavadora.php'; // Cambia 'lavadora.html' por la URL de la página de la lavadora
     } else if (busqueda === 'bafle') {
         window.location.href = 'bafle.html'; // Cambia 'bafle.html' por la URL de la página del bafle
       } else if (busqueda === 'televisor') {
@@ -81,7 +81,7 @@ function Opc6(event) {
 // FUNCIONES PARA LA PAG PEDIDO-PREPARACION
 
  function comprar()  {
-   window.location.href= "index.html"
+   window.location.href= "views/index.php"
  }
 
  // FUNCIONES DE LA PAG CONTRAENTREGA Y CONTRAENTREGA-NOT
@@ -114,13 +114,13 @@ function Opc6(event) {
 // Funcion del boton del carro de compras
 
 function carro()  {
-  window.location.href= "carrito.html"
+  window.location.href= "HTML/carrito.php"
 }
 
 //Funciones para el boton politicas de alquilar
 
 function politicas()  {
-  window.location.href= "Pagina de ayuda.html"
+  window.location.href= "Pagina de ayuda.php"
 }
 document.addEventListener('DOMContentLoaded', function () {
   let currentIndex = 0;

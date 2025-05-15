@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FORMA DE ENTREGA</title>
       <!-- Enlace al archivo de estilos CSS -->
-      <link rel="stylesheet" href="CSS/Style.css">
+      <link rel="stylesheet" href="../CSS/Style.css">
       <script src="Botones.js"></script>
 </head>
 <body>
@@ -16,7 +16,7 @@
         <div class="container">
           <div class="logo">
             <!-- Imagen del logo de RendiX -->
-            <img src="IMAGENES/RendiX.jpg" alt="Logo de Rendix">
+            <img src="../IMAGENES/RendiX.jpg" alt="Logo de Rendix">
           </div>
           
           
@@ -38,7 +38,7 @@
               <br>
             <br>
               <!-- Imagen representativa del método de pago -->
-              <img src="IMAGENES/pngegg.png" alt="DOMICILIO" width="100">
+              <img src="../IMAGENES/pngegg.png" alt="DOMICILIO" width="100">
             </div>
             <br>
             <br>
@@ -57,7 +57,7 @@
             <div class="meta">
               <span class="mettitle">Retirar En </span>
               <span class="price">Punto De Entrega</span>
-              <img src="IMAGENES/1757493.png" alt="Lavadora-Haceb" width="100">
+              <img src="../IMAGENES/1757493.png" alt="Lavadora-Haceb" width="100">
             </div>
             <p class="desc">Retirar en punto de entrega es un servicio que permite a los clientes recoger sus productos de alquiler en un lugar designado, brindando flexibilidad para quienes prefieren recoger sus compras a su conveniencia.</p>
   

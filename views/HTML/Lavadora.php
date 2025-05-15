@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proceso de pago</title>
     <!-- Enlace al archivo de estilos CSS -->
-    <link rel="stylesheet" href="CSS/Style.css">
-    <script src="Botones.js"></script>
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <script src="JS/Botones.js"></script>
 </head>
 <body>
     <!-- Inicio del encabezado de la página -->
@@ -23,15 +23,15 @@
           <!-- Barra de navegación -->
            <nav>
               <ul id="menu">
-                <li><a href="../iniciyoregis.php">Regístrate / Inicia Sesión</a></li>
+                <li><a href="iniciyoregis.php">Regístrate / Inicia Sesión</a></li>
                 <li><a href="../index.php">Productos destacados</a></li> 
-                <li><a href="../contactenos.php">Contáctenos</a></li>
+                <li><a href="contactenos.php">Contáctenos</a></li>
                 <li class="dropdown">
                   <a href="#">Más opciones</a>
                   <ul class="dropdown-content">
-                    <li><a href="../Calificanos.php">Califícanos</a></li>
-                    <li><a href="../Pagina de ayuda.php">Ayuda</a></li>
-                    <li><a href="../PQRS.php">PQRS</a></li>
+                    <li><a href="Calificanos.php">Califícanos</a></li>
+                    <li><a href="Pagina de ayuda.php">Ayuda</a></li>
+                    <li><a href="PQRS.php">PQRS</a></li>
                   </ul>
                 </li>
               </ul>
@@ -45,7 +45,7 @@
     
     <!-- Contenedor de la imagen del producto -->
     <div class="image-container">
-      <img src="IMAGENES/7704353431483-1.webp" alt="Lavadora-Haceb"class="centered-image" width="400">
+      <img src="../IMAGENES/7704353431483-1.webp" alt="Lavadora-Haceb"class="centered-image" width="400">
     </div>
     
     <!-- Descripción detallada del producto -->
@@ -89,7 +89,7 @@
             <!-- Imagen representativa del método de pago -->
             <br>
             <br>
-            <img src="IMAGENES/1757493.png" alt="Lavadora-Haceb" width="100">
+            <img src="../IMAGENES/1757493.png" alt="Lavadora-Haceb" width="100">
           </div>
           <!-- Descripción del método de pago -->
           <p class="desc">Método de pago en el cual el cliente realiza el pago de su compra al momento de recibir el producto en su domicilio.</p>
@@ -140,7 +140,7 @@
 
 <!-- SDK PayPal -->
 <script src="https://www.paypal.com/sdk/js?client-id=AencSSbUWL0LaXGyMj6YDdQ4G_PobGqPmSnIXt2mHi9Uisoy05fWbbW9mH4zbL-Fo9jidlWTwsSwasY4&currency=USD"></script>
-<script src="Paypal-Pago.js"></script>
+<script src="JS/Paypal-Pago.js"></script>
 
 
     </div> <!-- Fin del contenedor principal de métodos de pago -->
@@ -150,7 +150,7 @@
     <div class="metcards-container">
       <div class="cardprofile">
         <span class="card__title">Luz Alvira Rojas Pinilla</span>
-        <img src="IMAGENES/pexels-photo-1181686.jpeg" alt="Profile" width="100">
+        <img src="../IMAGENES/pexels-photo-1181686.jpeg" alt="Profile" width="100">
         <p class="card__content">
           <b>¡Hola! Soy Luz Alvira Rojas Pinilla</b>, una emprendedora dedicada al comercio y ahora, como proveedora de productos en RendiX...
         </p>

@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proceso de pago</title>
     <!-- Enlace al archivo de estilos CSS -->
-    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="../CSS/Style.css">
     <script src="Botones.js"></script>
 </head>
 <body>
@@ -45,7 +45,7 @@
     
     <!-- Contenedor de la imagen del producto -->
     <div class="image-container">
-      <img src="IMAGENES/karma-bx-7415-altavoz-pasivo-de-15-450w.jpg" alt="Lavadora-Haceb"class="centered-image" width="320">
+      <img src="../IMAGENES/karma-bx-7415-altavoz-pasivo-de-15-450w.jpg" alt="Lavadora-Haceb"class="centered-image" width="320">
     </div>
     
     <!-- Descripción detallada del producto -->
@@ -112,7 +112,7 @@
             <!-- Imagen representativa del método de pago -->
             <br>
             <br>
-            <img src="IMAGENES/1757493.png" alt="Lavadora-Haceb" width="100">
+            <img src="../IMAGENES/1757493.png" alt="Lavadora-Haceb" width="100">
           </div>
           <!-- Descripción del método de pago -->
           <p class="desc">Método de pago en el cual el cliente realiza el pago de su compra al momento de recibir el producto en su domicilio.</p>
@@ -138,7 +138,7 @@
           <div class="meta">
             <span class="mettitle">Pago Con</span>
             <span class="price">Tarjeta Bancaria</span>
-            <img src="IMAGENES/6757707.png" alt="Lavadora-Haceb" width="100">
+            <img src="../IMAGENES/6757707.png" alt="Lavadora-Haceb" width="100">
           </div>
           <p class="desc">Método de pago en el cual se realiza una transacción en la que un cliente utiliza una tarjeta de débito o crédito...</p>
           <ul class="lists">
@@ -160,7 +160,7 @@
     <div class="metcards-container">
       <div class="cardprofile">
         <span class="card__title">Luis Alfonso Goméz Suarez</span>
-        <img src="IMAGENES/pexels-italo-melo-881954-2379004.jpg" alt="Profile" width="100">
+        <img src="../IMAGENES/pexels-italo-melo-881954-2379004.jpg" alt="Profile" width="100">
         <p class="card__content">
           <b>¡Hola! Soy Luis Alfonso Gómez Suárez</b>, , un profesional en marketing apasionado por crear estrategias efectivas y ahora también proveedor de productos en RendiX.
         </p>

@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="CSS/form-visa-mastercard.css">
+    <link rel="stylesheet" href="../CSS/form-visa-mastercard.css">
     <script src="Botones.js"></script>
 
 </head>
@@ -16,7 +16,7 @@
       
           <div class="logo">
             <!-- Imagen del logo de RendiX -->
-            <img src="IMAGENES/RendiX.jpg" alt="Logo de Rendix">
+            <img src="../IMAGENES/RendiX.jpg" alt="Logo de Rendix">
           </div>
     </header>
 

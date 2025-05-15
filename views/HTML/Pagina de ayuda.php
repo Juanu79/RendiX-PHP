@@ -6,13 +6,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayuda</title>
-    <link rel="stylesheet" href="CSS/StyleAyuda.css">
+    <link rel="stylesheet" href="../CSS/StyleAyuda.css">
 </head>
 <body>
     <header>
         <div class="container">
             <div class="logo">
-                <img src="IMAGENES/RENDIXblanco.png" alt="Logo de Rendix">
+                <img src="../IMAGENES/RENDIXblanco.png" alt="Logo de Rendix">
             </div>
             <nav>
                 <!-- Botón de búsqueda -->
@@ -26,15 +26,15 @@
                     <input type="text" name="text" class="input__search" placeholder="Buscar Productos, Marcas o Servicios">
                 </div>
                 <ul id="menu">
-                    <li><a href="iniciyoregis.html">Regístrate / Inicia Sesión</a></li>
-                    <li><a href="index.html">Productos destacados</a></li>
-                    <li><a href="contactenos.html">Contáctenos</a></li>
+                    <li><a href="iniciyoregis.php">Regístrate / Inicia Sesión</a></li>
+                    <li><a href="index.php">Productos destacados</a></li>
+                    <li><a href="contactenos.php">Contáctenos</a></li>
                     <li class="dropdown">
                       <a href="#">Más opciones</a>
                       <ul class="dropdown-content">
-                        <li><a href="Calificanos.html">Califícanos</a></li>
-                        <li><a href="Pagina de ayuda.html">Ayuda</a></li>
-                        <li><a href="PQRS.html">PQRS</a></li>
+                        <li><a href="calificanos.php">Califícanos</a></li>
+                        <li><a href="Pagina de ayuda.php">Ayuda</a></li>
+                        <li><a href="PQRS.php">PQRS</a></li>
                       </ul>
                     </li>
                   </ul>

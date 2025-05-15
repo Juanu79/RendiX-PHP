@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="../CSS/Style.css">
     <script src="Botones.js"></script>
 
 </head>
@@ -16,7 +16,7 @@
         <div class="container">
           <div class="logo">
             <!-- Imagen del logo de RendiX -->
-            <img src="IMAGENES/RendiX.jpg" alt="Logo de Rendix">
+            <img src="../IMAGENES/RendiX.jpg" alt="Logo de Rendix">
           </div>
     </header>
     <h3 id="l1">¿CUAL ES LA FRANQUICIA DE TU BANCO?</h3>
@@ -33,7 +33,7 @@
           <br>
           <br>
           <!-- Imagen representativa del método de pago -->
-          <img src="IMAGENES/pngwing.com.png" alt="Lavadora-Haceb" width="100">
+          <img src="../IMAGENES/pngwing.com.png" alt="Lavadora-Haceb" width="100">
         </div>
         <br>
 
@@ -48,7 +48,7 @@
         <div class="meta">
           <span class="mettitle">SOY TEAM</span>
           <span class="price">Mastercard</span>
-          <img src="IMAGENES/pngwing.com (1).png" alt="Lavadora-Haceb" width="100">
+          <img src="../IMAGENES/pngwing.com (1).png" alt="Lavadora-Haceb" width="100">
         </div>
 
         <button onclick="mastercard()" class="action">Procesar pago</button>

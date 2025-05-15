@@ -6,13 +6,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calificanos | RendiX</title>
-   <link rel="stylesheet" href="CSS/StyleCalifica.css">
+   <link rel="stylesheet" href="../CSS/StyleCalifica.css">
 </head>
 <body>
     <header>
         <div class="container header-container">
             <div class="logo">
-                <img src="IMAGENES/RENDIXblanco.png" alt="Logo de RendiX">
+                <img src="../IMAGENES/RENDIXblanco.png" alt="Logo de RendiX">
             </div>
             
             <button class="mobile-nav-toggle" id="navToggle">
@@ -156,7 +156,7 @@
         <div class="container">
             <div class="footer-container">
                 <div class="footer-section">
-                    <img src="IMAGENES/RENDIXblanco.png" alt="Logo RendiX" class="footer-logo">
+                    <img src="../IMAGENES/RENDIXblanco.png" alt="Logo RendiX" class="footer-logo">
                     <p>RendiX es tu plataforma de alquiler de productos premium. Ofrecemos soluciones de alta calidad para tus necesidades temporales.</p>
                     <div class="social-links">
                         <a href="#" class="social-link">

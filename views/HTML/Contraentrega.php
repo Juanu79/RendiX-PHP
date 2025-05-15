@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pago Contraentrega</title>
-    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="../CSS/Style.css">
     <script src="Botones.js"></script>
 </head>
 <body>
@@ -14,7 +14,7 @@
         <div class="container">
           <div class="logo">
             <!-- Imagen del logo de RendiX -->
-            <img src="IMAGENES/RENDIXblanco.png" alt="Logo de Rendix">
+            <img src="../IMAGENES/RENDIXblanco.png" alt="Logo de Rendix">
           </div>    
         </div>
     </header>
@@ -31,7 +31,7 @@
               <span class="price">PEDIDO</span>
     
               <!-- Imagen representativa del método de pago -->
-              <img src="IMAGENES/pngegg.png" alt="DOMICILIO" width="100">
+              <img src="../IMAGENES/pngegg.png" alt="DOMICILIO" width="100">
             </div>
             <!-- Descripción del método de pago -->
            

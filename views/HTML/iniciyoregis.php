@@ -6,24 +6,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Inicio de Sesión</title>
-  <link rel="stylesheet" href="CSS/Styleregis.css" />
+  <link rel="stylesheet" href="../CSS/Styleregis.css" />
 </head>
 <body>
 
   <div class="overlay">
     <div class="login-container">
-      <img src="IMAGENES/RendiX.png" alt="Logo RendiX" class="logo" />
+      <img src="../IMAGENES/RendiX.png" alt="Logo RendiX" class="logo" />
       <h2>Iniciar Sesión</h2>
       <input type="text" placeholder="Usuario" class="input" />
       <input type="password" placeholder="Contraseña" class="input" />
       <button onclick="Iniciar()">Entrar</button>
-      <p class="registro">¿No tienes cuenta? <a href="#" onclick="Registrarse()">Regístrate</a></p>
+      <p class="registro">¿No tienes cuenta? <a href="registrarse.php" onclick="Registrarse(event)">Regístrate</a></p>
     </div>
   </div>
 
  
   </footer>
 
-  <script src="iniciarsesion.js"></script>
+  <script src="../JS/iniciarsesion.js"></script>
 </body>
 </html>

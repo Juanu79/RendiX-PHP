@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedido en Preparación</title>
     <link rel="stylesheet" href="../CSS/Style.css">
-    <script src="Botones.js"></script>
+    <script src="../JS/Botones.js"></script>
 </head>
 <body>
     <body id="contactar">

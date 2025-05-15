@@ -33,15 +33,15 @@
                 </div>
                 
                 <ul id="menu">
-                    <li><a href="#">Registrarse / Iniciar Sesión</a></li>
-                    <li><a href="#">Productos destacados</a></li>
-                    <li><a href="#">Contáctenos</a></li>
-                    <li class="dropdown">
-                        <a href="#">Más opciones</a>
-                        <ul class="dropdown-content">
-                            <li><a href="#">Califícanos</a></li>
-                            <li><a href="#">Ayuda</a></li>
-                            <li><a href="#">PQRS</a></li>
+            <li><a href="iniciyoregis.php">Regístrate / Inicia Sesión</a></li>
+                <li><a href="../index.php">Productos destacados</a></li>
+                <li><a href="contactenos.php">Contáctenos</a></li>
+                <li class="dropdown">
+                <a href="#">Más opciones</a>
+                <ul class="dropdown-content">
+                <li><a href="calificanos.php">Califícanos</a></li>
+                <li><a href="Pagina de ayuda.php">Ayuda</a></li>
+                <li><a href="PQRS.php">PQRS</a></li>
                         </ul>
                     </li>
                 </ul>

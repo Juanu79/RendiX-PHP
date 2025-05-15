@@ -44,71 +44,71 @@
 // FUNCIONES PARA LA PAGINA LAVADORA
   function registro(event) { 
     event.preventDefault(); // Prevenir el comportamiento predeterminado del formulario 
-    window.location.href = "HTML/RegistroExitoso.php"; // Redirigir a la página de registro exitoso 
+    window.location.href = "RegistroExitoso.php"; // Redirigir a la página de registro exitoso 
     } 
   function met1() {
-    window.location.href="HTML/Forma-Entrega.php" // Link para Pag Forma de Entrega
+    window.location.href="Forma-Entrega.php" // Link para Pag Forma de Entrega
   }
   function met2() {
-    window.location.href="HTML/form-Entrega-not.php" // Link para Pag Forma de Entrega
+    window.location.href="form-Entrega-not.php" // Link para Pag Forma de Entrega
   }
 
 // fUNCIONES PARA LA PAGINA DE FORMA-ENTREGA
    function Opc1() {
-    window.location.href="HTML/Form-Direccion.php"; //Link fORMULARIO De Direccion
+    window.location.href="Form-Direccion.php"; //Link fORMULARIO De Direccion
                    }
     function Opc2()  {
-    window.location.href="HTML/Contraentrega-not.php" //Link fORMULARIO De Direccion
+    window.location.href="Contraentrega-not.php" //Link fORMULARIO De Direccion
 } 
   function Opc3(event) { 
    event.preventDefault(); // Prevenir el comportamiento predeterminado del formulario 
-   window.location.href = "HTML/Contraentrega.php"; // Redirigir a la página de Contraentrega
+   window.location.href = "Contraentrega.php"; // Redirigir a la página de Contraentrega
 } 
 
 
 // FUNCIONES PARA LA PAGINA DE FORMA-ENTREGA-NOT
 function Opc4() {
-  window.location.href="HTML/Form-Direccion-not.php"; //Link fORMULARIO De Direccion
+  window.location.href="Form-Direccion-not.php"; //Link fORMULARIO De Direccion
                  }
   function Opc5()  {
-  window.location.href="HTML/Tarjetas-not.php" //Link fORMULARIO De Direccion
+  window.location.href="Tarjetas-not.php" //Link fORMULARIO De Direccion
 } 
 function Opc6(event) { 
   event.preventDefault(); // Prevenir el comportamiento predeterminado del formulario 
-  window.location.href = "HTML/Tarjetas.php"; // Redirigir a la página de Contraentrega
+  window.location.href = "Tarjetas.php"; // Redirigir a la página de Contraentrega
 } 
 
 // FUNCIONES PARA LA PAG PEDIDO-PREPARACION
 
  function comprar()  {
-   window.location.href= "views/index.php"
+   window.location.href= "../index.php"
  }
 
  // FUNCIONES DE LA PAG CONTRAENTREGA Y CONTRAENTREGA-NOT
 
   function pedido()  {
-    window.location.href= "HTML/Pedido-Preparacion.php"
+    window.location.href= "Pedido-Preparacion.php"
   }
 
 // FUNCIONES PARA LA PAG PROCESO-TARJETAS
   function vis()  {
-    window.location.href= "HTML/form-mastercard.php"
+    window.location.href= "form-mastercard.php"
   }
   function mastercard()  {
-    window.location.href= "HTML/form-mastercard.php"
+    window.location.href= "form-mastercard.php"
   }
 // FUNCIONES PARA LAS PAG TARJETAS Y TARJETAS-NOT
   function proceso()  {
-  window.location.href= "HTML/Proceso-Tarjetas.php"
+  window.location.href= "Proceso-Tarjetas.php"
 }
 // FUNCIONES PARA LAS PAG DE FORM-VISA Y FORM-MASTERCARD
   function master(event) { 
     event.preventDefault(); // Prevenir el comportamiento predeterminado del formulario 
-   window.location.href = "HTML/Pedido-Preparacion.php"; // Redirigir a la página de Contraentrega
+   window.location.href = "Pedido-Preparacion.php"; // Redirigir a la página de Contraentrega
 } 
   function visa(event) { 
    event.preventDefault(); // Prevenir el comportamiento predeterminado del formulario 
-   window.location.href = "HTML/Pedido-Preparacion.php"; // Redirigir a la página de Contraentrega
+   window.location.href = "Pedido-Preparacion.php"; // Redirigir a la página de Contraentrega
 } 
 
 // Funcion del boton del carro de compras
@@ -119,13 +119,11 @@ function carro()  {
 
 //Funciones para el boton politicas de alquilar
 
-function politicas()  {
-<<<<<<< HEAD
-  window.location.href= "HTML/Pagina de ayuda.php"
-=======
-  window.location.href= "Pagina de ayuda.php"
->>>>>>> f1476c5def3b994c7317432c1d1ace7338412c98
+function politicas() {
+  window.location.href = "pagina_ayuda.php";
 }
+
+
 document.addEventListener('DOMContentLoaded', function () {
   let currentIndex = 0;
   const slides = document.querySelector('.slides');

@@ -8,7 +8,7 @@
     <title>FORMA DE ENTREGA</title>
       <!-- Enlace al archivo de estilos CSS -->
       <link rel="stylesheet" href="../CSS/Style.css">
-      <script src="Botones.js"></script>
+      <script src="../JS/Botones.js"></script>
 </head>
 <body>
      <!-- Inicio del encabezado de la página -->

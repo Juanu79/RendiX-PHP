@@ -1,7 +1,7 @@
 /* Fondo general */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: url('IMAGENES/Fondo-Mapa.png') no-repeat center center fixed;
+    background: url('../IMAGENES/Fondo-Mapa.png') no-repeat center center fixed;
     background-size: cover;
     margin: 0;
     padding: 0;

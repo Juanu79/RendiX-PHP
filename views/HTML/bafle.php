@@ -9,7 +9,7 @@
     <title>Proceso de pago</title>
     <!-- Enlace al archivo de estilos CSS -->
     <link rel="stylesheet" href="../CSS/Style.css">
-    <script src="Botones.js"></script>
+    <script src="../JS/Botones.js"></script>
 </head>
 <body>
     <!-- Inicio del encabezado de la página -->
@@ -133,25 +133,37 @@
       </div>
 
       <!-- Segundo bloque de método de pago: Tarjeta Bancaria -->
-      <div class="Bloque2">
-        <div class="metcard">
-          <div class="meta">
-            <span class="mettitle">Pago Con</span>
-            <span class="price">Tarjeta Bancaria</span>
-            <img src="../IMAGENES/6757707.png" alt="Lavadora-Haceb" width="100">
-          </div>
-          <p class="desc">Método de pago en el cual se realiza una transacción en la que un cliente utiliza una tarjeta de débito o crédito...</p>
-          <ul class="lists">
-            <li class="list">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-              </svg>
-              <span>Seguridad</span>
-            </li>
-          </ul>
-          <button onclick="met2()" class="action">continuar</button>
-        </div>
-      </div>
+<div class="Bloque2">
+  <div class="metcard">
+    <div class="meta">
+      <span class="mettitle">Pago Con</span>
+      <span class="price">PayPal o Tarjeta</span>
+        <br>
+            <br>
+      <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt="PayPal Logo" width="100">
+    </div>
+    <p class="desc">Realiza tu pago de manera rápida y segura con tu cuenta PayPal, sin necesidad de ingresar los datos de tu tarjeta directamente.</p>
+    <ul class="lists">
+      <li class="list">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+        </svg>
+        <span>Transacción segura y protegida</span>
+      </li>
+    </ul>
+
+    <!-- Contenedor del botón PayPal -->
+    <div id="paypal-button-container" class="paypal-button-wrapper"></div>
+
+</div>
+
+  </div>
+</div>
+
+<!-- SDK PayPal -->
+<script src="https://www.paypal.com/sdk/js?client-id=AencSSbUWL0LaXGyMj6YDdQ4G_PobGqPmSnIXt2mHi9Uisoy05fWbbW9mH4zbL-Fo9jidlWTwsSwasY4&currency=USD"></script>
+<script src="../JS/Paypal-Pago.js"></script>
+
 
     </div> <!-- Fin del contenedor principal de métodos de pago -->
 

@@ -9,10 +9,7 @@
     <title>Proceso de pago</title>
     <!-- Enlace al archivo de estilos CSS -->
     <link rel="stylesheet" href="../CSS/Style.css">
-<<<<<<< HEAD
-    <script src="Botones.js"></script>
-=======
-    <script src="JS/Botones.js"></script>
+    <script src="../JS/Botones.js"></script>
 >>>>>>> f1476c5def3b994c7317432c1d1ace7338412c98
 </head>
 <body>
@@ -144,7 +141,7 @@
 
 <!-- SDK PayPal -->
 <script src="https://www.paypal.com/sdk/js?client-id=AencSSbUWL0LaXGyMj6YDdQ4G_PobGqPmSnIXt2mHi9Uisoy05fWbbW9mH4zbL-Fo9jidlWTwsSwasY4&currency=USD"></script>
-<script src="JS/Paypal-Pago.js"></script>
+<script src="../JS/Paypal-Pago.js"></script>
 
 
     </div> <!-- Fin del contenedor principal de métodos de pago -->

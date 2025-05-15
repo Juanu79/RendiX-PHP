@@ -24,46 +24,54 @@
     <button onclick="vaciarCarrito()">Vaciar carrito</button>
   </main>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const contenedor = document.getElementById("productos-carrito");
-      let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
-      let total = 0;
+ <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const contenedor = document.getElementById("productos-carrito");
+    let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+    let total = 0;
 
-      if (carrito.length === 0) {
-        contenedor.innerHTML = "<p>No hay productos en tu carrito aún.</p>";
-      } else {
-        contenedor.innerHTML = "";
-        carrito.forEach(producto => {
-          total += producto.precio;
-          const div = document.createElement("div");
-          div.classList.add("producto-en-carrito");
-          div.innerHTML = `
-            <img src="${producto.imagen}" alt="${producto.nombre}" width="100">
-            <h3>${producto.nombre}</h3>
-            <p>Tipo de entrega: ${producto.tipoEntrega}</p>
-            <p>Precio: $${producto.precio.toLocaleString()}</p>
-          `;
-          contenedor.appendChild(div);
-        });
+    if (carrito.length === 0) {
+      contenedor.innerHTML = "<p>No hay productos en tu carrito aún.</p>";
+    } else {
+      contenedor.innerHTML = "";
+      carrito.forEach(producto => {
+        total += producto.precio;
 
-        const totalDiv = document.createElement("div");
-        totalDiv.innerHTML = `
-          <h2>Total a pagar: $${total.toLocaleString()}</h2>
-          <button onclick="redirigirPago()">Pagar</button>
+        // Ajustar ruta de imagen para que tenga ../ al inicio si no lo tiene
+        let imagenPath = producto.imagen;
+        if (!imagenPath.startsWith("../") && !imagenPath.startsWith("/")) {
+          imagenPath = "../" + imagenPath;
+        }
+
+        const div = document.createElement("div");
+        div.classList.add("producto-en-carrito");
+        div.innerHTML = `
+          <img src="${imagenPath}" alt="${producto.nombre}" width="100">
+          <h3>${producto.nombre}</h3>
+          <p>Tipo de entrega: ${producto.tipoEntrega}</p>
+          <p>Precio: $${producto.precio.toLocaleString()}</p>
         `;
-        contenedor.appendChild(totalDiv);
-      }
-    });
+        contenedor.appendChild(div);
+      });
 
-    function vaciarCarrito() {
-      localStorage.removeItem("carrito");
-      location.reload();
+      const totalDiv = document.createElement("div");
+      totalDiv.innerHTML = `
+        <h2>Total a pagar: $${total.toLocaleString()}</h2>
+        <button onclick="redirigirPago()">Pagar</button>
+      `;
+      contenedor.appendChild(totalDiv);
     }
+  });
 
-    function redirigirPago() {
-      window.location.href = "pago.html";
-    }
-  </script>
+  function vaciarCarrito() {
+    localStorage.removeItem("carrito");
+    location.reload();
+  }
+
+  function redirigirPago() {
+    window.location.href = "pago.php";
+  }
+</script>
+
 </body>
 </html>

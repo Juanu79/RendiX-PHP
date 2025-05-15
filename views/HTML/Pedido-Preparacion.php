@@ -146,7 +146,7 @@
         </div>
         
             <p id="p3">Estamos preparando tu pedido. Pronto estará en camino.</p>
-            <button onclick="comprar()" class="button2">SEGUIR ALQUILANDO</button>
+        <button onclick=" seguirAlquilando()" class="button2">SEGUIR ALQUILANDO</button>
         </div>
     </div>
     

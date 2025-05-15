@@ -1,4 +1,67 @@
 <?php
+// vista/index.php
+
+require_once __DIR__ . '/../modelo/Productos.php';
+
+$productosDestacados = [];
+
+
+$productosDestacados[] = new Producto(
+    "Lavadora 11 Kilogramos Haceb Panel Frontal Digital Gris",
+    "IMAGENES/7704353431483-1.webp",
+    50000,
+    "Por 1 día",
+    "La lavadora Haceb, tiene período de uso de 2 meses. Marca: Haceb...",
+    "HTML/Lavadora.php"
+);
+
+$productosDestacados[] = new Producto(
+    "Televisor 32 Pulgadas Challenger LED TV3",
+    "IMAGENES/7705191043944_01.webp",
+    65000,
+    "Por 1 día",
+    "El Televisor 32\" Challenger LED TV es un televisor con tiempo de uso de 5 meses...",
+    "HTML/televisor.php"
+);
+
+$productosDestacados[] = new Producto(
+    "Xbox 360",
+    "IMAGENES/41G+FzEeRCL.jpg",
+    49900,
+    "Por 1 día",
+    "La Xbox 360 tiene un tiempo de uso de 1 año...",
+    "HTML/xbox.php"
+);
+
+$productosDestacados[] = new Producto(
+    "CAMPING IGLU ROYAKAMP 4 PERSONAS",
+    "IMAGENES/tienda-turistica-aislado-sobre-fondo-blanco_873674-588.avif",
+    35000,
+    "Por 3 días",
+    "La tienda Iglú es ideal para 4 personas...",
+    "HTML/camping.php"
+);
+
+$productosDestacados[] = new Producto(
+    "Renault Kwid 2019",
+    "IMAGENES/Renault Kwid.jpeg",
+    500000,
+    "Por 7 días",
+    "El Renault Kwid es modelo 2019 con 35.000 km, económico y práctico...",
+    "HTML/carro.php"
+);
+
+// Verificar si la vista existe antes de asignar la URL
+$pcDetalle = file_exists(__DIR__ . '/HTML/pcgamer.php') ? "HTML/pcgamer.php" : "#";
+
+$productosDestacados[] = new Producto(
+    "PC Gamer Ryzen 5",
+    "IMAGENES/PCRYZEN.webp",
+    150000,
+    "Por 5 días",
+    "Computador de escritorio con procesador Ryzen 5, 16 GB RAM, tarjeta gráfica GTX 1660...",
+    $pcDetalle
+);
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -84,7 +147,7 @@
       </div>
   
       <div class="slide" style="background:  
-        url('IMAGENES/punlicidad4.png') center/cover no-repeat;">
+        url('IMAGENES/publicidad4.png') center/cover no-repeat;">
         <div class="content">
           <a href="#" class="btn">Descubre más</a>
         </div>
@@ -109,84 +172,28 @@
    <!-- Contenedor principal de productos organizados en filas -->
    <div class="flex-container" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between;">
 
-    <div class="Bloque1">
-      Lavado Kilogramos Haceb Panel Frontal Digital Gris
-      <div class="card">
-        <div class="content">
-          <img src="IMAGENES/7704353431483-1.webp" alt="Lavadora-Haceb" width="200">
-          <br><br>
-          <div class="price1">$50.000 cop</div>
-          <div class="price1">Por 1 día</div>
-          <div class="description">La lavadora Haceb, tiene período de uso de 2 meses. Marca: Haceb...</div>
-        </div>
-        <button onclick="redirigir1()">Alquilar</button>
-      </div>
-    </div>
-  
-    <div class="Bloque3">
-      Televisor 32 Pulgadas Challenger LED TV3
-      <div class="card">
-        <div class="content">
-          <img src="IMAGENES/7705191043944_01.webp" alt="Televisor 32 p" width="200">
-          <div class="price1">$65.000 cop</div>
-          <div class="price1">Por 1 día</div>
-          <div class="description">El Televisor 32" Challenger LED TV es un televisor con tiempo de uso de 5 meses...</div>
-        </div>
-        <button onclick="redirigir3()">Alquilar</button>
-      </div>
-    </div>
-  
-    <div class="Bloque4">
-      Xbox 360
-      <div class="card">
-        <div class="content">
-          <img src="IMAGENES/41G+FzEeRCL.jpg" alt="Xbox 360" width="200">
-          <div class="price1">$49.900 cop</div>
-          <div class="price1">Por 1 día</div>
-          <div class="description">La Xbox 360 tiene un tiempo de uso de 1 año...</div>
-        </div>
-        <button onclick="redirigir4()">Alquilar</button>
-      </div>
-    </div>
-  
-    <div class="Bloque5">
-      CAMPING IGLU ROYAKAMP 4 PERSONAS
-      <div class="card">
-        <div class="content">
-          <img src="IMAGENES/tienda-turistica-aislado-sobre-fondo-blanco_873674-588.avif" alt="Camping" width="200">
-          <div class="price1">$35.000 cop</div>
-          <div class="price1">Por 3 días</div>
-          <div class="description">La tienda Iglú es ideal para 4 personas...</div>
-        </div>
-        <button onclick="redirigir5()">Alquilar</button>
-      </div>
-    </div>
-  
-    <div class="Bloque6">
-      Renault Kwid 2019
-      <div class="card">
-        <div class="content">
-          <img src="IMAGENES/Renault Kwid.jpeg" alt="Renault Kwid" width="200">
-          <div class="price1">$500.000 cop</div>
-          <div class="price1">Por 7 días</div>
-          <div class="description">El Renault Kwid es modelo 2019 con 35.000 km, económico y práctico...</div>
-        </div>
-        <button onclick="redirigir6()">Alquilar</button>
-      </div>
-    </div>
+   <?php foreach ($productosDestacados as $producto): ?>
+    <div class="BloqueProducto">
+        <div class="card">
+            <div class="content">
+                <p style="text-align: center; font-weight: bold; min-height: 40px;">
+                    <?php echo htmlspecialchars($producto->getNombre()); ?>
+                </p>
+                <img src="<?php echo htmlspecialchars($producto->getImagenUrl()); ?>" alt="<?php echo htmlspecialchars($producto->getNombre()); ?>" width="200">
+                <br><br>
+                <div class="price1"><?php echo htmlspecialchars($producto->getPrecioFormateado()); ?></div>
+                <div class="price1"><?php echo htmlspecialchars($producto->getUnidadTiempoPrecio()); ?></div>
+                <div class="description" style="min-height: 60px;"><?php echo htmlspecialchars($producto->getDescripcionGeneral()); ?></div>
+            </div>
 
-    <div class="Bloque6">
-      PC Gamer Ryzen 5
-      <div class="card">
-        <div class="content">
-          <img src="IMAGENES/PCRYZEN.webp" alt="PC Gamer Ryzen 5" width="200">
-          <div class="price1">$150.000 cop</div>
-          <div class="price1">Por 5 días</div>
-          <div class="description">Computador de escritorio con procesador Ryzen 5, 16 GB RAM, tarjeta gráfica GTX 1660, ideal para juegos, diseño gráfico y trabajo remoto.</div>
+            <button onclick="window.location.href='<?php echo htmlspecialchars($producto->getUrlDetalle()); ?>'">Alquilar</button>
+
+            <div class="agregar-carrito-container">
+                <button onclick="agregarAlCarrito('<?php echo htmlspecialchars(addslashes($producto->getNombre())); ?>')">Agregar al carrito</button>
+            </div>
         </div>
-        <button onclick="redirigir6()">Alquilar</button>
-      </div>
     </div>
+<?php endforeach; ?>
   
   </div>
   

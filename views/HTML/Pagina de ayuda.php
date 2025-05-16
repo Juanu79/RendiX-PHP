@@ -49,18 +49,62 @@
               <h1>Centro De Ayuda </h1>
           <P>Encuentra respuestas a tus preguntas o ponte en contacto con nuestro equipo de soporte.</P>
           <center><div class="form-container">
-            <form class="form">
+            <form class="form"  id="helpForm">
               <div class="form-group">
                 <label for="email">Correo de la compañia</label>
                 <input type="text" id="email" name="email" required="">
               </div>
               <div class="form-group">
                 <label for="textarea">¿Como podemos ayudarte?</label>
-                <textarea name="textarea" id="textarea" rows="10" cols="50" required=""></textarea>
+                <textarea name="mensaje" id="textarea" rows="10" cols="50" required></textarea>
               </div>
               <button class="form-submit-btn" type="submit">Enviar</button>
             </form>
           </div></center>
+
+          <script>
+// Agrega un listener al formulario con ID 'quejaForm' para manejar el evento de envío
+document.getElementById('helpForm').addEventListener('submit', function(e) {
+    // Previene el comportamiento por defecto del formulario (recargar la página)
+    e.preventDefault();
+
+    // Crea un objeto FormData con todos los datos del formulario actual
+    const formData = new FormData(this);
+
+    // Realiza una petición HTTP tipo POST al archivo PqrsController.php
+    fetch('../../controlador/AyudaController.php', { 
+        method: 'POST',      // Método POST para enviar datos
+        body: formData       // Cuerpo de la petición: los datos del formulario
+    })
+    // Convierte la respuesta del servidor (esperada en formato JSON)
+    .then(response => response.json())
+
+    // Maneja la respuesta ya convertida (objeto JavaScript)
+    .then(data => {
+        // Si el servidor responde con success: true
+        if(data.success) {
+            // Muestra un mensaje de éxito al usuario
+            alert('¡Gracias por tu solicitud! La hemos recibido correctamente.');
+            // Limpia (resetea) el formulario para que quede vacío
+            document.getElementById('helpForm').reset();
+        } else {
+            // Si la respuesta indica fallo, muestra un mensaje de error
+            alert('Hubo un error al enviar tu solicitud.');
+        }
+        
+    })
+
+    // Captura cualquier error ocurrido durante la petición fetch
+    .catch(error => {
+        // Muestra el error en la consola del navegador para depuración
+        console.error('Error:', error);
+        // Informa al usuario que ocurrió un error inesperado
+        alert('Error inesperado. Inténtalo más tarde.');
+    });
+});
+
+</script>
+
             <main>
                 <section id="seccion1">
                     <!-- Botón del menú desplegable -->
@@ -115,7 +159,6 @@
             
           
           <pre id="result"></pre>
-          <script src="Redirecion.js"></script>
               
           </body>
           </html>

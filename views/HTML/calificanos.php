@@ -107,7 +107,31 @@
                     <button type="submit" class="submit-btn" id="submitBtn">Enviar valoración</button>
                 </form>
             </div>
-            
+            <script>
+document.getElementById('ratingForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const formData = new FormData(this);
+
+    fetch('../../controlador/CalificacionController.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        if(data.success) {
+            document.getElementById('successMessage').style.display = 'block';
+            document.getElementById('ratingForm').reset();
+        } else {
+            alert('Hubo un problema al enviar tu valoración.');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+});
+</script>
+
             <div class="reviews-section">
                 <h2 class="section-title">Opiniones recientes</h2>
                 

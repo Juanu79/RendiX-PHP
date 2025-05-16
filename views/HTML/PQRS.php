@@ -64,9 +64,10 @@
    <hr>
    <CENTER><div class="card">
     <span class="title">Dinos tus quejas</span>
-    <form class="form">
-      <div class="group">
-      <input placeholder="‎" type="text" required="">
+    <form class="form" id="quejaForm">
+
+<div class="group">
+      <input placeholder="‎" type="text" id="name" name="name" required>
       <label for="name">Ingresa tu nombre</label>
       </div>
   <div class="group">
@@ -79,28 +80,52 @@
   </div>
       <button type="submit">Enviar</button>
     </form>
+            <script>
+// Agrega un listener al formulario con ID 'quejaForm' para manejar el evento de envío
+document.getElementById('quejaForm').addEventListener('submit', function(e) {
+    // Previene el comportamiento por defecto del formulario (recargar la página)
+    e.preventDefault();
+
+    // Crea un objeto FormData con todos los datos del formulario actual
+    const formData = new FormData(this);
+
+    // Realiza una petición HTTP tipo POST al archivo PqrsController.php
+    fetch('../../controlador/PqrsController.php', { 
+        method: 'POST',      // Método POST para enviar datos
+        body: formData       // Cuerpo de la petición: los datos del formulario
+    })
+    // Convierte la respuesta del servidor (esperada en formato JSON)
+    .then(response => response.json())
+
+    // Maneja la respuesta ya convertida (objeto JavaScript)
+    .then(data => {
+        // Si el servidor responde con success: true
+        if(data.success) {
+            // Muestra un mensaje de éxito al usuario
+            alert('¡Gracias por tu queja! La hemos recibido correctamente.');
+            // Limpia (resetea) el formulario para que quede vacío
+            document.getElementById('quejaForm').reset();
+        } else {
+            // Si la respuesta indica fallo, muestra un mensaje de error
+            alert('Hubo un error al enviar tu queja.');
+        }
+        
+    })
+
+    // Captura cualquier error ocurrido durante la petición fetch
+    .catch(error => {
+        // Muestra el error en la consola del navegador para depuración
+        console.error('Error:', error);
+        // Informa al usuario que ocurrió un error inesperado
+        alert('Error inesperado. Inténtalo más tarde.');
+    });
+});
+
+</script>
+
   </div></CENTER>
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <pre id="result"></pre>
-<script src="Redirecion.js"></script>
+
     
 </body>
 </html>

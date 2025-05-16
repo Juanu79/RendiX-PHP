@@ -1,5 +1,17 @@
 <?php
+session_start();
+require_once '../../modelo/CarritoCompra.php';
+
+$carrito = new CarritoCompra();
+
+// Manejar vaciar carrito (botón que viene en tu HTML)
+if (isset($_POST['vaciar'])) {
+    $carrito->vaciarCarrito();
+    header("Location:carrito.php"); // recarga la página para refrescar el carrito
+    exit;
+}
 ?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -209,16 +221,39 @@
 
   <header>
     <h1>Tu Carrito</h1>
-    <a href="index.html">
+    <a href="../index.php">
       <img src="../IMAGENES/RENDIXblanco.png" alt="rendix" class="imgr">
     </a>
   </header>
 
   <main>
     <div id="productos-carrito">
-      <p>No hay productos en tu carrito aún.</p>
-    </div>
-    <button onclick="vaciarCarrito()">Vaciar carrito</button>
+<?php
+if ($carrito->estaVacio()) {
+    echo "<p>No hay productos en tu carrito aún.</p>";
+} else {
+    foreach ($carrito->obtenerProductos() as $producto) {
+        $imagenPath = $producto['imagen'];
+        if (!str_starts_with($imagenPath, "../") && !str_starts_with($imagenPath, "/")) {
+            $imagenPath = "../" . $imagenPath;
+        }
+        echo "<div class='producto-en-carrito'>";
+        echo "<img src='$imagenPath' alt='{$producto['nombre']}' width='100'>";
+        echo "<h3>{$producto['nombre']}</h3>";
+        echo "<p>Tipo de entrega: " . ($producto['tipoEntrega'] ?? 'No especificado') . "</p>";
+        echo "<p>Precio: $" . number_format($producto['precio'], 0, ',', '.') . "</p>";
+        echo "</div>";
+    }
+    echo "<h2>Total a pagar: $" . number_format($carrito->obtenerTotal(), 0, ',', '.') . "</h2>";
+    echo '<button onclick="window.location.href=\'pago.php\'">Pagar</button>';
+}
+?>
+</div>
+
+   <form method="post" style="text-align: right; margin-top: 1rem;">
+  <button type="submit" name="vaciar">Vaciar carrito</button>
+</form>
+
   </main>
 
   <footer>
@@ -261,53 +296,6 @@
     </div>
   </footer>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const contenedor = document.getElementById("productos-carrito");
-      let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
-      let total = 0;
-
-      if (carrito.length === 0) {
-        contenedor.innerHTML = "<p>No hay productos en tu carrito aún.</p>";
-      } else {
-        contenedor.innerHTML = "";
-        carrito.forEach(producto => {
-          total += producto.precio;
-
-          let imagenPath = producto.imagen;
-          if (!imagenPath.startsWith("../") && !imagenPath.startsWith("/")) {
-            imagenPath = "../" + imagenPath;
-          }
-
-          const div = document.createElement("div");
-          div.classList.add("producto-en-carrito");
-          div.innerHTML = `
-            <img src="${imagenPath}" alt="${producto.nombre}" width="100">
-            <h3>${producto.nombre}</h3>
-            <p>Tipo de entrega: ${producto.tipoEntrega || 'No especificado'}</p>
-            <p>Precio: $${producto.precio.toLocaleString()}</p>
-          `;
-          contenedor.appendChild(div);
-        });
-
-        const totalDiv = document.createElement("div");
-        totalDiv.innerHTML = `
-          <h2>Total a pagar: $${total.toLocaleString()}</h2>
-          <button onclick="redirigirPago()">Pagar</button>
-        `;
-        contenedor.appendChild(totalDiv);
-      }
-    });
-
-    function vaciarCarrito() {
-      localStorage.removeItem("carrito");
-      location.reload();
-    }
-
-    function redirigirPago() {
-      window.location.href = "pago.php";
-    }
-  </script>
-
+ 
 </body>
 </html>

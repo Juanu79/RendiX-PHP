@@ -1,12 +1,23 @@
 <?php
+session_start();
+
+if (isset($_GET['vaciar']) && $_GET['vaciar'] == 1) {
+    // Vaciar carrito
+    if (isset($_SESSION['carrito'])) {
+        $_SESSION['carrito'] = [];
+    }
+    // Redirigir para limpiar la URL
+    header("Location:index.php");
+    exit();
+}
 // vista/index.php
 
 require_once __DIR__ . '/../modelo/Productos.php';
 
 $productosDestacados = [];
 
-
 $productosDestacados[] = new Producto(
+    1, // ID del producto
     "Lavadora 11 Kilogramos Haceb Panel Frontal Digital Gris",
     "IMAGENES/7704353431483-1.webp",
     50000,
@@ -16,6 +27,7 @@ $productosDestacados[] = new Producto(
 );
 
 $productosDestacados[] = new Producto(
+    2,
     "Televisor 32 Pulgadas Challenger LED TV3",
     "IMAGENES/7705191043944_01.webp",
     65000,
@@ -25,6 +37,7 @@ $productosDestacados[] = new Producto(
 );
 
 $productosDestacados[] = new Producto(
+    3,
     "Xbox 360",
     "IMAGENES/41G+FzEeRCL.jpg",
     49900,
@@ -34,6 +47,7 @@ $productosDestacados[] = new Producto(
 );
 
 $productosDestacados[] = new Producto(
+    4,
     "CAMPING IGLU ROYAKAMP 4 PERSONAS",
     "IMAGENES/tienda-turistica-aislado-sobre-fondo-blanco_873674-588.avif",
     35000,
@@ -43,6 +57,7 @@ $productosDestacados[] = new Producto(
 );
 
 $productosDestacados[] = new Producto(
+    5,
     "Renault Kwid 2019",
     "IMAGENES/Renault Kwid.jpeg",
     500000,
@@ -55,6 +70,7 @@ $productosDestacados[] = new Producto(
 $pcDetalle = file_exists(__DIR__ . '/HTML/pcgamer.php') ? "HTML/pcgamer.php" : "#";
 
 $productosDestacados[] = new Producto(
+    6,
     "PC Gamer Ryzen 5",
     "IMAGENES/PCRYZEN.webp",
     150000,
@@ -62,6 +78,7 @@ $productosDestacados[] = new Producto(
     "Computador de escritorio con procesador Ryzen 5, 16 GB RAM, tarjeta gráfica GTX 1660...",
     $pcDetalle
 );
+
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -172,7 +189,7 @@ $productosDestacados[] = new Producto(
    <!-- Contenedor principal de productos organizados en filas -->
    <div class="flex-container" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between;">
 
-   <?php foreach ($productosDestacados as $producto): ?>
+<?php foreach ($productosDestacados as $index => $producto): ?>
     <div class="BloqueProducto">
         <div class="card">
             <div class="content">
@@ -189,11 +206,38 @@ $productosDestacados[] = new Producto(
             <button onclick="window.location.href='<?php echo htmlspecialchars($producto->getUrlDetalle()); ?>'">Alquilar</button>
 
             <div class="agregar-carrito-container">
-                <button onclick="agregarAlCarrito('<?php echo htmlspecialchars(addslashes($producto->getNombre())); ?>')">Agregar al carrito</button>
+                <button onclick="agregarAlCarrito(<?php echo $index; ?>, 1)">Agregar al carrito</button>
             </div>
         </div>
     </div>
 <?php endforeach; ?>
+
+<script>
+function agregarAlCarrito(productoId, cantidad) {
+    fetch('../controlador/CarritoControlador.php', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+            producto_id: productoId,
+            cantidad: cantidad
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.mensaje === 'Producto agregado al carrito') {
+            alert('Producto agregado al carrito');
+        } else {
+            alert('Error al agregar al carrito: ' + data.mensaje);
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Error al agregar al carrito');
+    });
+}
+</script>
+
+
   
   </div>
   

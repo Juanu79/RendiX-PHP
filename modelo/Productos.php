@@ -1,5 +1,6 @@
 <?php
 class Producto {
+    private $id;
     private $nombre;
     private $imagenUrl;
     private $precio;
@@ -7,14 +8,18 @@ class Producto {
     private $descripcionGeneral;
     private $urlDetalle;
 
-    // Constructor (puede variar según tu implementación)
-    public function __construct($nombre, $imagenUrl, $precio, $unidadTiempoPrecio, $descripcionGeneral, $urlDetalle) {
+    public function __construct($id, $nombre, $imagenUrl, $precio, $unidadTiempoPrecio, $descripcionGeneral, $urlDetalle) {
+        $this->id = $id;
         $this->nombre = $nombre;
         $this->imagenUrl = $imagenUrl;
         $this->precio = $precio;
         $this->unidadTiempoPrecio = $unidadTiempoPrecio;
         $this->descripcionGeneral = $descripcionGeneral;
         $this->urlDetalle = $urlDetalle;
+    }
+
+    public function getId() {
+        return $this->id;
     }
 
     public function getNombre() {

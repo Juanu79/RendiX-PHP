@@ -145,8 +145,14 @@
           </div>
         </div>
         
-            <p id="p3">Estamos preparando tu pedido. Pronto estará en camino.</p>
-        <button onclick=" seguirAlquilando()" class="button2">SEGUIR ALQUILANDO</button>
+        <p id="p3">Estamos preparando tu pedido. Pronto estará en camino.</p>
+       <a href="../index.php?vaciar=1" class="button2">SEGUIR ALQUILANDO</a>
+
+
+
+
+
+
         </div>
     </div>
     
